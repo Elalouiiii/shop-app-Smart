@@ -1,0 +1,67 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mybtn {
+  border-radius: 5px !important;
+  border: 1px solid #888;
+  text-transform: capitalize !important;
+  padding-top: 7px !important;
+  font-size: 16px !important;
+
+}
+
+/*****Scrol bar  ***************************************/
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  border: 7px solid #292c3b;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  background-color: #d4d4d8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #777;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+/* for Firefox
+   html {scrollbar-color: #9e4673 #3d4a59;}  */
+.canvas img {
+  width: 120px;
+  height: 90px;
+  margin-left: 12%;
+}
+
+.clear {
+  display: flex;
+  justify-content: space-around;
+  /* color: rgb(25, 173, 34); */
+
+}
