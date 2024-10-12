@@ -2,10 +2,10 @@ import { useContext } from "react";
 import { ColorModeContext } from "../../src/theme";
 import { Box, Container, IconButton, Stack, Typography, useTheme } from "@mui/material";
 import { DarkModeOutlined, ExpandMore, LightModeOutlined } from "@mui/icons-material";
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import * as React from 'react';
+// import FacebookIcon from '@mui/icons-material/Facebook';
+// import TwitterIcon from '@mui/icons-material/Twitter';
+// import InstagramIcon from '@mui/icons-material/Instagram';
+// import * as React from 'react';
 import List from '@mui/material/List';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
@@ -69,7 +69,7 @@ export default function Header1() {
           variant="body2"
 
         >
-          HOT
+          Abaloui
         </Typography>
 
         <Typography sx={{
@@ -81,26 +81,10 @@ export default function Header1() {
         }}
           variant="body2"
         >
-          Free Express shopping
+          Free Smart shopping by Aloui Abdelaziz
         </Typography>
 
         <Box flexGrow={"1"} />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         <div style={{ color: '#fff' }}>
@@ -186,7 +170,7 @@ export default function Header1() {
 
 
 
-
+{/* 
         <TwitterIcon sx={{
           fontSize: '16px',
           color: '#ffff',
@@ -199,7 +183,7 @@ export default function Header1() {
         <InstagramIcon sx={{
           fontSize: '16px',
           color: '#ffff',
-        }} />
+        }} /> */}
       </Stack>
 
       </Container>

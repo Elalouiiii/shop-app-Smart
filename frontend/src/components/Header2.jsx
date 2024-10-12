@@ -16,8 +16,8 @@ import Cart from "./Cart";
 import { Close } from "@mui/icons-material";
 import { useSelector } from 'react-redux';
 import { useDispatch } from "react-redux";
-import clairAllCart from "../Redux/features/shopsSlice"
- import logoimage from '../imageProduct/logoimg.png'
+import clairAllCart from "../../src/Redux/features/shopsSlice"
+import logoimage from '../imageProduct/logoimg.png'
 
 
 
@@ -91,12 +91,10 @@ export default function Header2({ item }) {
   const [opens, setOpens] = useState(false);
 
   let total = 0
-  {
-    cart.map((item) => (
-      total = total + (item.productPrice + item.quantity)
-    ))
-  }
-  localStorage.setItem("cart",JSON.stringify(cart))
+  cart.map((item) => (
+    total = total + (item.productPrice * item.quantity)
+  ))
+  localStorage.setItem("cart", JSON.stringify(cart))
 
   const [anchorEl, setAnchorEl] = useState(null);
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -256,7 +254,7 @@ export default function Header2({ item }) {
           ))
             :
             <p style={{ textAlign: 'center', fontSize: '25px', fontWeight: 'bold', color: 'greenyellow' }}>
-               Product list is empty! ! ! !
+              Product list is empty! ! ! !
               <br />
               <br />
               <br />
